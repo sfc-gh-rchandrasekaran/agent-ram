@@ -46,11 +46,11 @@ Nova MCP Gateway
 Slack API (chat.postMessage)
 ```
 
-The task runs as `execute_as_user: RCHANDRASEKARAN`, so Nova uses YOUR OAuth token — Agent Ram acts on your behalf.
+The task runs as `execute_as_user: <YOUR_SNOWFLAKE_USER>`, so Nova uses YOUR OAuth token — Agent Ram acts on your behalf.
 
 ## The Personal Workspace Stage
 
-`USER$<USERNAME>.PUBLIC."DEFAULT$"` is your personal Snowflake stage, automatically provisioned by Snowflake. It's backed by the same object storage (S3/Azure/GCS) as all Snowflake stages, but access is restricted to your user.
+`@USER$<YOUR_USER>.PUBLIC.DEFAULT$` is your personal Snowflake stage, automatically provisioned by Snowflake. It's backed by the same object storage (S3/Azure/GCS) as all Snowflake stages, but access is restricted to your user.
 
 When mounted at `/workspace` inside the sandbox:
 - Reads are lazy (fetched on-demand from object storage, not pre-synced)

@@ -12,7 +12,7 @@ Follow the exact same logic as the automation prompt:
 Use the Slack MCP to search: query `is:dm`, last 20 results.
 
 Filter:
-- Skip messages FROM Ram (user ID U07881PANCE)
+- Skip messages FROM {{YOUR_NAME}} (user ID {{YOUR_SLACK_ID}})
 - Skip bots / automated messages
 - Only 1-on-1 DMs where the other person sent the most recent message
 - Skip if Ram already replied after their message
@@ -43,7 +43,7 @@ Ram is currently heads-down but I'm here to help!
 (Ram will be notified about this conversation)
 ```
 
-For ESCALATE → DM Ram (U07881PANCE):
+For ESCALATE → DM {{YOUR_NAME}} ({{YOUR_SLACK_ID}}):
 ```
 🚨 Agent Ram → Action needed
 

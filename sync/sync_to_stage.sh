@@ -4,8 +4,8 @@
 
 set -euo pipefail
 
-STAGE="@USER\$RCHANDRASEKARAN.PUBLIC.\"DEFAULT\$\""
-CONNECTION="snowhouse"
+STAGE="@USER\${{YOUR_SNOWFLAKE_USER}}.PUBLIC.\"DEFAULT\$\""
+CONNECTION="{{YOUR_CONNECTION}}"
 LOG="$HOME/.snowflake/cortex/slack-monitor/sync.log"
 ACTIVITY_FILE="/tmp/agent_ram_activity.md"
 

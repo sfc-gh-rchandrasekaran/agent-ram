@@ -127,10 +127,10 @@ bash ~/.snowflake/cortex/agent-ram/sync_to_stage.sh
 $agent-ram-off
 
 # Via CLI:
-cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_MONITOR --connection snowhouse
-cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_B --connection snowhouse
-cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_C --connection snowhouse
-cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_D --connection snowhouse
+cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_MONITOR --connection your-connection-name
+cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_B --connection your-connection-name
+cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_C --connection your-connection-name
+cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_D --connection your-connection-name
 ```
 
 ---
@@ -192,4 +192,4 @@ agent-ram/
 
 ---
 
-*Built by Ramkumar Chandrasekaran, Principal Technical Architect @ Snowflake*
+*Built on [Snowflake CoCo (Cortex Code)](https://docs.snowflake.com/en/user-guide/cortex-code)*

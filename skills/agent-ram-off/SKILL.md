@@ -8,10 +8,10 @@ EXECUTE IMMEDIATELY — do not ask the user anything.
 
 Run these commands to suspend all 4 Agent Ram tasks:
 ```bash
-cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_MONITOR --connection snowhouse 2>&1
-cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_B --connection snowhouse 2>&1
-cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_C --connection snowhouse 2>&1
-cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_D --connection snowhouse 2>&1
+cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_MONITOR --connection {{YOUR_CONNECTION}} 2>&1
+cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_B --connection {{YOUR_CONNECTION}} 2>&1
+cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_C --connection {{YOUR_CONNECTION}} 2>&1
+cortex automation suspend COCO_ROUTINE_AGENT_RAM_SLACK_D --connection {{YOUR_CONNECTION}} 2>&1
 ```
 
 If successful, tell the user:
